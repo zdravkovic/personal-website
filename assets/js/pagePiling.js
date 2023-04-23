@@ -114,6 +114,15 @@ const pagePiling = () => {
       if (index === 4) {
         animateCSS('.contact-page__blue-element', 'fadeOutTopLeft', 'delay-0' , 'fast');
         animateCSS('.contact-page__yellow-element', 'fadeOutTopLeft', 'delay-0' , 'fast');
+        if (domElements.formName.classList.contains('form-error')) {
+          domElements.formName.classList.remove('form-error');
+        }
+        if (domElements.formEmail.classList.contains('form-error')) {
+          domElements.formEmail.classList.remove('form-error');
+        }
+        if (domElements.formMessage.classList.contains('form-error')) {
+          domElements.formMessage.classList.remove('form-error');
+        }
       }
       
       // Change scroll arrow direction based on page index

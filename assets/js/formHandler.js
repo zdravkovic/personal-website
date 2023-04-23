@@ -16,6 +16,7 @@ const formSubmitHandler = (event) => {
 
   // Check if form is filled and if it's valid
   if (!isValidName || !isNaN(isValidName)) {
+    domElements.formName.setAttribute('data-display-value', 'block');
     domElements.formName.classList.add('form-error');
     setTimeout(() => {
       domElements.formName.setAttribute('data-display-value', 'none');
@@ -24,6 +25,7 @@ const formSubmitHandler = (event) => {
   } 
   
   if (!isValidEmail) {
+    domElements.formEmail.setAttribute('data-display-value', 'block');
     domElements.formEmail.setAttribute('data-error-message', 'Email is required');
     domElements.formEmail.classList.add('form-error');
     setTimeout(() => {
@@ -32,6 +34,7 @@ const formSubmitHandler = (event) => {
     return;
 
   } else if (emailHasSign === -1) {
+    domElements.formEmail.setAttribute('data-display-value', 'block');
     domElements.formEmail.setAttribute('data-error-message', "Plese use '@' in email address");
     domElements.formEmail.classList.add('form-error');
     setTimeout(() => {
@@ -41,6 +44,7 @@ const formSubmitHandler = (event) => {
   }
 
   if (!isValidMessage.trim()) {
+    domElements.formMessage.setAttribute('data-display-value', 'block');
     domElements.formMessage.classList.add('form-error');
     setTimeout(() => {
       domElements.formMessage.setAttribute('data-display-value', 'none');
