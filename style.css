@@ -1709,8 +1709,12 @@ input:focus + label {
 	}
 
 	.portfolio-page__image {
+		/* height: 37%; */
 		flex: 0 1 auto;
-		height: 37%;
+	}
+	
+	.portfolio-page__projects-content {
+		flex: 0 1 auto;
 	}
 
 	.portfolio-project__title {
@@ -1777,6 +1781,10 @@ input:focus + label {
 	.portfolio-page__image {
 		height: 100%;
 		width: 45%;
+	}
+
+	.portfolio-page__projects-content {
+		width: 55%;
 	}
 
 	.about-page__wrapper .row {
@@ -2060,6 +2068,7 @@ input:focus + label {
 		grid-template-rows: repeat(4, 1fr);
 		padding: 1rem;
 		height: 75%;
+		width: 100%;
 		align-items: end;
 	}
 
