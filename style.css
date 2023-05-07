@@ -1709,6 +1709,7 @@ input:focus + label {
 	}
 
 	.portfolio-page__image {
+		flex: 0 1 auto;
 		height: 37%;
 	}
 
